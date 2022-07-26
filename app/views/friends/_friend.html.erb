@@ -1,0 +1,10 @@
+<tr>
+  <td><%= link_to friend.first_name  + ' ' + friend.last_name,friend,class:"text-decoration-none"%></td>
+  <td><%= friend.email %></td>
+  <td><%= friend.twitter %></td>
+  <td><%= friend.phone %></td>
+  <td><%= friend.user_id%></td>
+  <td><%= button_to "Delete", friend, method: :delete ,data:{confirm: "Are you sure"},class:"btn btn-outline-danger btn-sm"%></td>
+
+ 
+  </tr>
